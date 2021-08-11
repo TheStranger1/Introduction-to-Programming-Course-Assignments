@@ -14,7 +14,7 @@ def lcm(x, y):
 
    return lcm
 
-#This program stores two number in a and b respectively. These numbers are passed to the lcm() function. The function returns the L.C.M of two numbers.
+#This program stores two number in x and y respectively. These numbers are passed to the lcm() function. The function returns the L.C.M of two numbers.
 
 #In the function, we first determine the greater of the two numbers since the L.C.M. can only be greater than or equal to the largest number. 
 #We then use an infinite while loop to go from that number and beyond.

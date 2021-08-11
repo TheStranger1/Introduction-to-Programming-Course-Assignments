@@ -7,14 +7,15 @@
 #1. There is an equal amount of characters in A and B (or, the length of A is equal to length of B), and
 #2. For every character found in A, there is an equal amount of same character in B
 
-stringa=raw_input("Enter string A: ") 
-stringb=raw_input("Enter string B: ")
 
-perm=False #boolean variable initially set to false.
+stringA = input("Enter string A: ")
+stringB = input("Enter String B: ")
 
-for char in stringa: 
-    if char in stringb and set(stringa)==set(stringb): #check if for every character in stringa is present in #string b and if the length of both is equal
-        perm=True #set perm to true if the condition is met
-while(perm):
-    print stringb,"is a permutation of",stringa 
+perm = False
+
+if set(stringA) == set(stringB) and len(stringA) == len(stringB):
+    perm = True
+
+while (perm):
+    print(stringB + " is a permutation of " + stringA)
     break
